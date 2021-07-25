@@ -95,7 +95,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
     //액티비티에서 호출되는 함수이며, 현재 어댑터에 새로운 게시글 아이템을 전달받아 추가하는 목적이다.
     public void addItem(AddressItem _item){
-        mAddressItems.add(0, _item);
+        mAddressItems.add(_item);
         notifyItemInserted(0);
     }
 }
